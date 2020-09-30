@@ -152,7 +152,7 @@ body{
         animation-name: bottomtotop;
         animation-duration: 1s;
         animation-iteration-count: 1;
-        
+       
     }
 
         .heroimage{
@@ -185,18 +185,19 @@ body{
 
     
     .about{
-        background-image: url(./download.png);
+        background-image: url(./image-asset.png);
             flex-direction: column;
             justify-content: flex-start;
-            
-        
+            background-size: 50vh 50vw;
         }
 
+
     .product{
-        background-image: url(https://picsum.photos/seed/100/900);
+        background-image: url(./blackmrkt.png);
         justify-content: center;
         align-items: center;
-    }
+        object-fit: cover;
+    }   
     
     .rotateicon{
         font-size: 10rem;
@@ -204,13 +205,15 @@ body{
         animation-name: inirotate;
         animation-duration: 1s;
         animation-iteration-count: infinite;
-        
+            
     }
 
 
     .contact{
-        background-image: url(https://picsum.photos/seed/6/900);
+        background-image: url(./mrkt.jpg);
+        object-fit: cover;
     }
+
     
     .footer{
         width: 100vw;
