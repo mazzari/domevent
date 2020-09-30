@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Press+Start+2P&display=swap');
+
+    html{
+
+    scroll-behavior: smooth;
+
+
+}
+*{
+
+    box-sizing: border-box;
+}
+
+body{
+
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(9, 17, 13);
+    font-family: 'Playfair Display SC', serif;
+}   
+
+.navbar{
+
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10%;
+    background-color : rgb(6, 99, 99);
+
+}   
+
+    .brand{
+
+        font-size: 2rem;
+    }
+
+    .menuicon{
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    .modalmenu{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.500);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    
+    }
+
+    .closeicon{
+
+        color: darkred;
+        font-size: 2rem;
+        position: absolute;
+        top: 15vh;
+        right: 10%;
+
+        
+    }
+
+    .closeicon:hover{
+        color: orangered;
+        cursor: pointer;
+    }
+
+    .modalmenu a{
+
+        text-decoration: none;
+        color: #fff;
+        font-size: 2rem;    
+    }
+
+    .modalmenu a:hover{
+
+        color: gold;
+        font-size: 2.2rem;
+    
+    }
+
+    .navbar{
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #000;
+        padding: 0 10%;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+    }
+
+    
+    .brand{
+        font-size: 3rem;
+        color: white;
+        font-weight: 200;
+    }
+    
+    .menuicon{
+        color: #fff;
+        font-size: 2rem;
+        margin-left: auto;
+    }
+    
+    .menuIcon:hover{
+        color: orange;
+    }
+    
+    .closeicon{
+        font-size: 2rem;
+        color: orangered;
+        position: fixed;
+        top : 20vh;
+        right: 10vw;
+    }
+    
+    .closeicon:hover{
+        font-size: 3rem;
+        
+    }
+    
+    .container section{
+        width: 100vw;
+        height: auto;
+        min-height: 100vh;
+        display: flex;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .home{
+        display: flex;
+        background-color:black;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        animation-name: bottomtotop;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        
+    }
+
+        .heroimage{
+            width: 250px;
+            height: 250px;
+            border-radius: 500px;
+            object-fit: inherit;
+            object-position: right;
+            animation-name:bottomtotop;
+            animation-duration: 1s;
+            animation-delay:    5s;
+            animation-fill-mode: forwards;
+
+        }
+
+
+
+
+
+        .herotext{
+
+            color: ivory;
+            font-size: 2rem;
+            
+        }
+
+
+
+
+
+    
+    .about{
+        background-image: url(./download.png);
+            flex-direction: column;
+            justify-content: flex-start;
+            
+        
+        }
+
+    .product{
+        background-image: url(https://picsum.photos/seed/100/900);
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .rotateicon{
+        font-size: 10rem;
+        color: white;
+        animation-name: inirotate;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        
+    }
+
+
+    .contact{
+        background-image: url(https://picsum.photos/seed/6/900);
+    }
+    
+    .footer{
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        padding: 0 10%;
+        color: white;
+        background-color: #000;
+    }
+    
+    .left{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .right{
+        width: 70%;
+        height: 100%;
+        display: flex;
+    }
+    
+    .col1, .col2{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .formGroup{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .kirim{
+        width: 100%;
+        height: 30px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+    
+    }
+
+    .aboutalert{
+
+        width: 100vw;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: honeydew;
+        position: sticky;
+        top: 10vh;
+        left: 0;
+    } 
+
+    @keyframes bottomtotop{
+        from{
+
+            transform: translateY(20vh);
+            opacity: 0;
+        }   
+        to{
+            transform: translateY(0vh);
+            opacity: 1;
+        }
+
+    }
+
+    @keyframes inirotate{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        
+        }
+            
+    }
