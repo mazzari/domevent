@@ -19,7 +19,7 @@ body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    background-color: rgb(9, 17, 13);
+    background-color: white;
     font-family: 'Playfair Display SC', serif;
 }   
 
@@ -149,9 +149,9 @@ body{
     .home{
         flex-direction: column;
         display: flex;
-        background-color:black;
+        background-image: url(./29799324-black-market-words-on-a-ball-or-sphere-of-money-hundred-dollar-bills-to-illustrate-an-illegal-or-unr.jpg);
         justify-content: center;
-        align-items: center;
+        align-items: center;    
         gap: 20px;
         animation-name: bottomtotop;
         animation-duration: 1s;
@@ -162,7 +162,7 @@ body{
     .home_content{
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items:center;
         gap: 40px;  
         height: 100%;
     }
@@ -209,7 +209,7 @@ body{
     }
     .about_box1{
         grid-template: box1;
-        background-image: url(https://picsum.photos/seed/66/600);
+        background-image: url(./blackmrkt.png);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -228,25 +228,39 @@ body{
     
     .about_box4{
         grid-template: box4;
-        background-image: url(https://picsum.photos/seed/61/600);;
+        background-image: url(./blacccck-market.jpg);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
         border-radius: 200px 0 0;    
     }
 
-
-
-
-
-
     .product{
-        background-image: url(./blackmrkt.png);
+       
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: teal;
+    }
+    .container product{
+        width: 100vw;
+        display: flex;
+        padding: 20px 40px;
         justify-content: center;
         align-items: center;
-        object-fit: cover;
-    }   
+        flex-wrap: wrap;  
+        gap: 10px;
+        transition-duration: 5s;
+    }
+       
+      
     
+    .container-product img:hover{
+        border-radius: 200px;
+
+
+        }
+
     .rotateicon{
         font-size: 10rem;
         color: white;
@@ -258,7 +272,7 @@ body{
 
 
     .contact{
-        background-image: url(./mrkt.jpg);
+        background-image: url(./black-market-caught-2.jpeg);
         object-fit: cover;
     }
 

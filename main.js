@@ -29,3 +29,15 @@ const hideaboutalert = () => {
 
 }
 
+let product = document.getElementById('container-product')
+
+let img = 50
+
+
+
+for (let i = 0; i < 150; i++) {
+    product.innerHTML += `
+    <img src='https://picsum.photos/seed/${img++}/100'/>
+
+    `
+}  
